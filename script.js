@@ -1,4 +1,5 @@
 'use strict';
+
 //selecting elements
 const score1El = document.getElementById('score--1');
 const score0El = document.getElementById('score--0');
@@ -23,9 +24,6 @@ const switchPlayer = () => {
   player0El.classList.toggle('player--active');
   player1El.classList.toggle('player--active');
 };
-
-let scores, currentScore, activePlayer, playing;
-
 const init = () => {
   // starting conditions
   scores = [0, 0];
@@ -43,6 +41,9 @@ const init = () => {
   player0El.classList.add('player--active');
   player1El.classList.remove('player--active');
 };
+
+let scores, currentScore, activePlayer, playing;
+
 init();
 // rolling dice handler
 
