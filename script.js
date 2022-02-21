@@ -77,7 +77,7 @@ buttonHold.addEventListener('click', () => {
       scores[activePlayer];
 
     // finish the game if the player has >= 100 score
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       playing = false;
       document
         .querySelector(`.player--${activePlayer}`)
@@ -95,6 +95,4 @@ buttonHold.addEventListener('click', () => {
 
 // newGame handler
 
-buttonNew.addEventListener('click', () => {
-  init();
-});
+buttonNew.addEventListener('click', init);
